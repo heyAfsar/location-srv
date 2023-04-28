@@ -6,24 +6,24 @@ import java.time.LocalDateTime;
 
 public class Result {
     @JsonProperty("sunrise")
-    private LocalDateTime sunrise;
+    private String sunrise;
 
-    @JsonProperty("sunrise")
-    private LocalDateTime sunset;
+    @JsonProperty("sunset")
+    private String sunset;
 
-    public LocalDateTime getSunrise() {
+    public String getSunrise() {
         return sunrise;
     }
 
-    public void setSunrise(LocalDateTime sunrise) {
+    public void setSunrise(String sunrise) {
         this.sunrise = sunrise;
     }
 
-    public LocalDateTime getSunset() {
+    public String getSunset() {
         return sunset;
     }
 
-    public void setSunset(LocalDateTime sunset) {
+    public void setSunset(String sunset) {
         this.sunset = sunset;
     }
 }
